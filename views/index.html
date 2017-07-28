@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Willitt's FCC File Sizing Microservice</title>
+    <meta name="description" content="FCC file upload challenge">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+              <h1>
+      Submit a File To See it's size!
+    </h1>
+    <p>
+      Select a file to check the size of and click "submit" to get a json response with the file size included.      
+    </p>
+    <form action="/get-size" method="post" enctype="multipart/form-data">
+        <input name="uploadFile" type="file"/>
+        <input type="submit" />
+    </form>
+        </div>        
+      </div>
+    </div>
+    <footer>
+    </footer>
+
+  </body>
+</html>
